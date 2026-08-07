@@ -1,0 +1,33 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Marker with both keys (must be GREEN from marker-color, not red)",
+        "stroke": "#FF0000",
+        "marker-color": "#00FF00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.3, 46.9]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Path with both keys (must be RED from stroke, not green)",
+        "stroke": "#FF0000",
+        "marker-color": "#00FF00"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [8.2, 46.85],
+          [8.35, 46.95],
+          [8.5, 46.88]
+        ]
+      }
+    }
+  ]
+}
