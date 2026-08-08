@@ -1,0 +1,31 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Donut area (outer ring + hole)",
+        "stroke": "#0066CC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [8.51, 47.36],
+            [8.56, 47.36],
+            [8.56, 47.39],
+            [8.51, 47.39],
+            [8.51, 47.36]
+          ],
+          [
+            [8.525, 47.37],
+            [8.545, 47.37],
+            [8.545, 47.38],
+            [8.525, 47.38],
+            [8.525, 47.37]
+          ]
+        ]
+      }
+    }
+  ]
+}
