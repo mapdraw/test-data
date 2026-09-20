@@ -1,0 +1,28 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Good sibling" },
+      "geometry": { "type": "Point", "coordinates": [8.54, 47.37] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Collection with null member" },
+      "geometry": {
+        "type": "GeometryCollection",
+        "geometries": [
+          null,
+          { "type": "Point", "coordinates": [8.5, 47.3] },
+          {
+            "type": "LineString",
+            "coordinates": [
+              [8.5, 47.3],
+              [8.6, 47.35]
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
