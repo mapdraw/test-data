@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="mapdraw audit test" xmlns="http://www.topografix.com/GPX/1/1">
+  <trk>
+    <name>Elevation gap test</name>
+    <trkseg>
+      <trkpt lat="46.6200" lon="8.0300"><ele>1500</ele></trkpt>
+      <trkpt lat="46.6209" lon="8.0304"><ele>1513</ele></trkpt>
+      <trkpt lat="46.6218" lon="8.0308"><ele>1527</ele></trkpt>
+      <trkpt lat="46.6227" lon="8.0312"><ele>1540</ele></trkpt>
+      <trkpt lat="46.6236" lon="8.0316"><ele>1553</ele></trkpt>
+      <trkpt lat="46.6245" lon="8.0320"><ele>1567</ele></trkpt>
+      <trkpt lat="46.6254" lon="8.0324"><ele>1580</ele></trkpt>
+      <trkpt lat="46.6263" lon="8.0328"><ele>1593</ele></trkpt>
+      <trkpt lat="46.6272" lon="8.0332"><ele>1607</ele></trkpt>
+      <trkpt lat="46.6281" lon="8.0336"><ele>1620</ele></trkpt>
+      <trkpt lat="46.6290" lon="8.0340"><ele>1633</ele></trkpt>
+      <trkpt lat="46.6299" lon="8.0344"><ele>1647</ele></trkpt>
+      <trkpt lat="46.6308" lon="8.0348"><ele>1660</ele></trkpt>
+      <trkpt lat="46.6317" lon="8.0352"></trkpt>
+      <trkpt lat="46.6326" lon="8.0356"></trkpt>
+      <trkpt lat="46.6335" lon="8.0360"></trkpt>
+      <trkpt lat="46.6344" lon="8.0364"><ele>1689</ele></trkpt>
+      <trkpt lat="46.6353" lon="8.0368"><ele>1679</ele></trkpt>
+      <trkpt lat="46.6362" lon="8.0372"><ele>1668</ele></trkpt>
+      <trkpt lat="46.6371" lon="8.0376"><ele>1657</ele></trkpt>
+      <trkpt lat="46.6380" lon="8.0380"><ele>1646</ele></trkpt>
+      <trkpt lat="46.6389" lon="8.0384"><ele>1636</ele></trkpt>
+      <trkpt lat="46.6398" lon="8.0388"><ele>1625</ele></trkpt>
+      <trkpt lat="46.6407" lon="8.0392"><ele>1614</ele></trkpt>
+      <trkpt lat="46.6416" lon="8.0396"><ele>1604</ele></trkpt>
+      <trkpt lat="46.6425" lon="8.0400"><ele>1593</ele></trkpt>
+      <trkpt lat="46.6434" lon="8.0404"><ele>1582</ele></trkpt>
+      <trkpt lat="46.6443" lon="8.0408"><ele>1571</ele></trkpt>
+      <trkpt lat="46.6452" lon="8.0412"></trkpt>
+      <trkpt lat="46.6461" lon="8.0416"></trkpt>
+    </trkseg>
+  </trk>
+</gpx>
