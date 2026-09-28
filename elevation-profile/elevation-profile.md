@@ -30,7 +30,7 @@ Then `copy(JSON.stringify(snaps))` and save in the track folder. Never click ⊕
 
 ## Results
 
-Ascent / descent in m. `every-point` = live app before 2026-09-28 (every point sent, Google capped at 5000); `25m-sampling` = one point every 25 m (`ELEVATION_SAMPLE_SPACING` in `js/elevation.js`).
+Ascent / descent in m. `every-point` = live app before 2026-09-28 (every point sent, Google capped at 5000); `25m-sampling` = one point every 25 m (`ELEVATION_SAMPLE_SPACING` in `js/elevation.js`); `25m-sampling-keep-vertices` = same, but a path already sparser than 25 m keeps its vertices (only affects vogesenkammweg, where it equals every-point).
 
 | Track                | Source           | every-point           | 25m-sampling          |
 | :------------------- | :--------------- | :-------------------- | :-------------------- |
@@ -50,6 +50,6 @@ Ascent / descent in m. `every-point` = live app before 2026-09-28 (every point s
 | vogesenkammweg       | File             | 19180 / 18939, 130h17 | same                  |
 |                      | Google           | 18152 / 17921, 127h02 | 17717 / 17487, 125h44 |
 
-Every-point GeoAdmin equals map.geo.admin.ch. On dense GPS tracks, 25 m sampling removes the jitter noise; highest/lowest points are unchanged. On the sparse planned route it loses ~2% ascent because even samples miss the vertices.
+Every-point GeoAdmin equals map.geo.admin.ch. On dense GPS tracks, 25 m sampling removes the jitter noise; highest/lowest points are unchanged. On the sparse planned route it lost ~2% ascent because even samples miss the vertices; keep-vertices fixes that.
 
 swisstopo app (Beinwil): numbers from its share page https://swisstopo.app/i/5/GE3EVMHV, `swisstopo-app.gpx` from its share API. It keeps the file elevation; Douglas-Peucker with ~3 m tolerance plus the Swiss hiking formula reproduces its numbers exactly (reconstructed, not from source).
