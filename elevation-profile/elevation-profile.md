@@ -30,6 +30,8 @@ Then `copy(JSON.stringify(snaps))` and save in the track folder. Never click ⊕
 
 Snapshots are stored as recorded. The `vogesenkammweg` every-point and 25m-sampling snapshots end with an empty entry (`"source":null`), recorded after the GeoAdmin attempt returned no profile.
 
+`monte-gambarogno/2026-09-30-sample-distances.json` was recorded to verify MapDraw commit fbb5801 (API samples placed at their recorded path distance instead of searched for on the track) and equals the 25m-sampling snapshot exactly. Comparing it with a GPX exported after ⊕ showed that the fixed code writes all 584 samples of both APIs to within 1 cm of their API value, where the previous code was off by up to 2.6 m.
+
 ## Results
 
 Ascent / descent in m. `every-point` = live app before the changes of 2026-09-28 (every point sent; Google resampled to 5000 points for longer paths; for mapdraw-route-no-elevation measured by disabling the sampling in the console); `25m-sampling` = one point every 25 m (`ELEVATION_SAMPLE_SPACING` in `js/elevation.js`); `25m-sampling-keep-vertices` = same, but a path already sparser than 25 m keeps its vertices (only affects vogesenkammweg, where it equals every-point); `25m-sampling-file` = the File source is sampled the same way (API rows unchanged).
