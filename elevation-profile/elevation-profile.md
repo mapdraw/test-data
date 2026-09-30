@@ -28,6 +28,8 @@ snaps.push({
 
 Then `copy(JSON.stringify(snaps))` and save in the track folder. Never click ⊕: it writes the API elevation into the track.
 
+The download icon next to "Source" saves the same points (plus coordinates) as `<track>_Elevation_Profile_<Source>.csv`, without the console; only the summary text is not in the CSV.
+
 Snapshots are stored as recorded. The `vogesenkammweg` every-point and 25m-sampling snapshots end with an empty entry (`"source":null`), recorded after the GeoAdmin attempt returned no profile.
 
 `monte-gambarogno/2026-09-30-sample-distances.json` was recorded to verify MapDraw commit fbb5801 (API samples placed at their recorded path distance instead of searched for on the track); its Google and GeoAdmin entries equal those of 25m-sampling exactly, its File entry that of 25m-sampling-file. Comparing it with a GPX exported after ⊕ showed that the fixed code writes all 584 samples of both APIs to within 1 cm of their API value, where the previous code was off by up to 2.6 m.
