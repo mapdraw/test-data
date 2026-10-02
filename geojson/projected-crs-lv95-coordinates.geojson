@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "name": "projected-crs-lv95-coordinates",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::2056" } },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Bern in LV95 meters - import must reject this" },
+      "geometry": { "type": "Point", "coordinates": [2600000, 1200000] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Line in LV95 meters - import must reject this" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [2600000, 1200000],
+          [2601000, 1201000]
+        ]
+      }
+    }
+  ]
+}
